@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Wajib transparan agar window overlay benar-benar tembus pandang */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: transparent !important;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #fff;
+  cursor: pointer;
+}
+@keyframes marquee-slide {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  70%,
+  85% {
+    transform: translateX(var(--marquee-dist));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.marquee-run {
+  animation: marquee-slide var(--marquee-dur) linear infinite;
+}

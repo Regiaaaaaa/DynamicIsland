@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Vite build output
+dist/
+dist-ssr/
+
+# Tauri build output
+src-tauri/target/
+
+# Generated files
+src-tauri/gen/schemas/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Installer build output
+*.exe
+*.msi
+
+# Backup source yang tidak digunakan
+src-tauri/src/media_ps_backup.rs
