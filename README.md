@@ -1,7 +1,19 @@
-# Tauri + React
+# DynamicIsland
+Floating Dynamic Island for Windows. Media controls, album art, and volume in a smooth animated pill. Built with Tauri, React, and Framer Motion.
 
-This template should help get you started developing with Tauri and React in Vite.
+## Features
+- Compact → Hover → Opens with a spring animation (Framer Motion)
+- Reads data from Spotify and the browser via SMTC (title, artist, album art, playback progress)
+- Play/pause, next track, and previous track controls
+- Master volume slider
+- System tray icon with Exit and autostart menus
 
-## Recommended IDE Setup
+## Technology Stack
+Tauri v2 (Rust) · React + Vite · Tailwind CSS · Framer Motion · Lucide
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Running
+npm install
+npm run tauri dev
+
+## Building
+npm run tauri build
